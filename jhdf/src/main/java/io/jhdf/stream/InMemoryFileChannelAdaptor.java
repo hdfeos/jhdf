@@ -131,7 +131,6 @@ public class InMemoryFileChannelAdaptor extends FileChannel {
 		if(mode != MapMode.READ_ONLY) {
 			throw new NonWritableChannelException();
 		}
-
 		return new MappedByteBufferAdaptor();
 	}
 
